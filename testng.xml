@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="tests" thread-count="2">
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://www.baidu.com"></parameter>
+    <test name="maven_workshop">
+        <classes>
+            <class name="org.example.SeleniumTest">
+                <methods>
+                    <include name="searchSelenium"/>
+                    <include name="searchJava"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- maven_workshop -->
+    <test name="maven_workshop1">
+        <classes>
+            <class name="org.example.SeleniumTest">
+                <methods>
+                    <include name="searchSelenium"/>
+                    <include name="searchJava"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- maven_workshop -->
+</suite> <!-- Default Suite -->
+
+
+
